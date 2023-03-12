@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
+     DOCKER_USERNAME:898838605
+     DOCKER_PASSWORD:898838605
+     - uses: actions/checkout@v3
+     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
